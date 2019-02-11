@@ -2,12 +2,13 @@ import React from 'react'
 
 function Header() {
   var headerStyle = {
-    color: 'red',
-    backgroundColor: 'green'
+    color: 'lightBlue',
   }
   
   return(
-    <h1 style = {headerStyle}>Help Queue</h1>
+    <div>
+      <h1 style = {headerStyle}>Help Queue</h1>
+    </div>
   )
 }
 
