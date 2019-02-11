@@ -1,5 +1,5 @@
-import React from "react";
-import Ticket from "./Ticket";
+import React from 'react'
+import Ticket from './Ticket'
 
 
 function TicketList() {
@@ -8,7 +8,7 @@ function TicketList() {
       location="3A"
       names= "Thato and Haley"
       issue="Firebase problems" />
-  );
+  )
 }
 
-export default TicketList;
+export default TicketList

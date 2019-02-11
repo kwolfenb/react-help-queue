@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Header() {
   var headerStyle = {
@@ -7,8 +7,8 @@ function Header() {
   }
   
   return(
-    <h1 style={headerStyle}>Help Queue</h1>
-  );
+    <h1 style = {headerStyle}>Help Queue</h1>
+  )
 }
 
-export default Header;
+export default Header
