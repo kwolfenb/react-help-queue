@@ -4,12 +4,24 @@ import PropTypes from 'prop-types'
 function Ticket(props) {
   return (
     <div>
-      <style global jsx>{`
+      <style jsx>
+      {`
         div {
-          background-color: red;
+          background-image: linear-gradient(to right, #D4FFF7, white);
+          border-radius: 4px;
+          margin-right: 5%;
         }
-      `}</style>
-      <h3> { props.location } - { props.names }</h3>
+        h4 {
+          padding-top: 6px;
+          margin-left: 8px;
+        }
+        p {
+          font-size: 12px;
+          margin-left: 3%;
+        }
+      `}
+      </style>
+      <h4> { props.location } - { props.names }</h4>
       <p><em> { props.issue }</em></p>
       <hr/>
     </div>
