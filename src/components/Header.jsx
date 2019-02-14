@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
 
@@ -18,9 +19,16 @@ function Header() {
           padding: 5px;
           text-align: center
         }
+        h6 {
+          font-weight: bold;
+          font-size: 1em;
+        }
       `}
       </style>
       <h1>Help Queue</h1>
+      <h6>
+        <Link to='/'>Home</Link> | <Link to='/newticket'>Create Ticket</Link>
+      </h6>
     </div>
   )
 }

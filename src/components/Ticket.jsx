@@ -5,7 +5,7 @@ function Ticket(props) {
   return (
     <div>
       <style jsx>
-      {`
+        {`
         div {
           background-image: linear-gradient(to right, #D4FFF7, white);
           border-radius: 4px;
