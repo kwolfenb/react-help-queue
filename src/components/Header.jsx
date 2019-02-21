@@ -27,7 +27,7 @@ function Header() {
       </style>
       <h1>Help Queue</h1>
       <h6>
-        <Link to='/'>Home</Link> | <Link to='/newticket'>Create Ticket</Link>
+        <Link to='/'>Home</Link> | <Link to='/newticket'>Create Ticket</Link> | <Link to='/admin'>Admin</Link>
       </h6>
     </div>
   )
