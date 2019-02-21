@@ -2,36 +2,38 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Ticket(props) {
-  return (
+  const ticketInformation =
     <div>
-      <style jsx>
-        {`
-        div {
-          background-image: linear-gradient(to right, #D4FFF7, white);
-          border-radius: 4px;
-          margin-right: 5%;
-        }
-        h4 {
-          padding-top: 6px;
-          margin-left: 8px;
-        }
-        p {
-          font-size: 12px;
-          margin-left: 3%;
-        }
-      `}
-      </style>
-      <h4> { props.location } - { props.names }</h4>
-      <p><em> { props.issue }</em></p>
+      <h3>{props.location} - {props.names}</h3>
+      {/* <h4>{props.formattedWaitTime}</h4> */}
+      <p><em>{props.issue}</em></p>
       <hr/>
-    </div>
-  )
+    </div>;
+  if (props.currentRouterPath === '/admin'){
+    return (
+      <div onClick={() => {alert('hey, you just clicked the ticket belonging to ' + props.names);}}>
+        {ticketInformation}
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {ticketInformation}
+      </div>
+    );
+  }
 }
+
+// function displayTimeOpen(timeOpen) {
+//   return timeOpen.fromNow(new Moment(), true);
+// }
 
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
-}
+  issue: PropTypes.string,
+  formattedWaitTime: PropTypes.string.isRequired,
+  currentRouterPath: PropTypes.string
+};
 
 export default Ticket
