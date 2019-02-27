@@ -1,6 +1,8 @@
+import c from './../constants';
+
 export default (state = {}, action) => {
     switch (action.type) {
-    case 'ADD_TICKET':
+    case c.ADD_TICKET:
       const { names, location, issue, timeOpen, id } = action;
       let newState = Object.assign({}, state, {
         [id]: {

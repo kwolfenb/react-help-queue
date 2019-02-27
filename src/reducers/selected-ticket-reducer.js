@@ -1,3 +1,10 @@
+import c from './../constants';
+
 export default (state = {}, action) => {
-    return state;
+    switch(action.type) {
+        case c.SELECT_TICKET:
+            return action.ticketId;
+        default:
+            return state;
+    }
   };

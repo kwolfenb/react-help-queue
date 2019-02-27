@@ -8,6 +8,7 @@ import Moment from 'moment';
 import Admin from './Admin';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import c from '../constants';
 
 class App extends React.Component {
 
@@ -65,7 +66,7 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterTicketList: state
+    masterTicketList: state.masterTicketList
   };
 };
 
